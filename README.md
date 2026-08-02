@@ -25,6 +25,7 @@ Browsable, categorized indexes of AI tools.
 - [Toolify](https://www.toolify.ai) - AI tool directory ranked by traffic, updated daily.
 - [Artificial Intelligence Directory](https://artificialintelligencedirectory.site) - Structured artificial intelligence product directory organized by use case.
 - [Get AI Tools](https://getaitools.site) - AI tool recommendations and practical buying guides to help you choose the right tool.
+- [Mydentify AI Discovery Hub](https://mydentify.com/tools/hubs/ai-discovery) - A topical hub of six free tools for product clarity, AI crawler access, llms.txt, JavaScript rendering, and sitemap discovery.
 - [TopAI.tools](https://topai.tools) - Search-first AI tool discovery engine.
 
 ## AI Product Databases & Indexes
