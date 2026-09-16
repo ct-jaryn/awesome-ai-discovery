@@ -22,6 +22,7 @@ Browsable, categorized indexes of AI tools.
 - [There's An AI For That](https://theresanaiforthat.com) - One of the largest AI tool aggregators, searchable by task.
 - [Futurepedia](https://www.futurepedia.io) - Large AI tool directory with reviews and categories.
 - [AI Seek Guide](https://aiseekguide.com) - Curated AI tools directory covering chat, agents, writing, image, video, coding, productivity, design, audio, and enterprise workflows.
+- [AI Tools Radar](https://aitoolsradar.com) - AI tools directory and editorial platform for discovering, comparing, and tracking AI products.
 - [Toolify](https://www.toolify.ai) - AI tool directory ranked by traffic, updated daily.
 - [Artificial Intelligence Directory](https://artificialintelligencedirectory.site) - Structured artificial intelligence product directory organized by use case.
 - [Get AI Tools](https://getaitools.site) - AI tool recommendations and practical buying guides to help you choose the right tool.
@@ -92,6 +93,7 @@ Where models and papers live.
 - [Ben's Bites](https://bensbites.com) - Daily AI news digest.
 - [TLDR AI](https://tldr.tech/ai) - Concise daily AI/ML newsletter.
 - [The Rundown AI](https://www.therundown.ai) - Daily AI news and tool roundups.
+- [AI Tools Radar](https://aitoolsradar.com/en/newsletter) - Daily AI industry briefing covering models, products, chips, cloud, data centers, robotics, security, regulation, and AI tools.
 - [Import AI](https://importai.substack.com) - Weekly analysis of AI research and policy by Jack Clark.
 
 ## Contributing
