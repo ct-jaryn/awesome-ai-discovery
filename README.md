@@ -26,6 +26,7 @@ Browsable, categorized indexes of AI tools.
 - [Artificial Intelligence Directory](https://artificialintelligencedirectory.site) - Structured artificial intelligence product directory organized by use case.
 - [Get AI Tools](https://getaitools.site) - AI tool recommendations and practical buying guides to help you choose the right tool.
 - [TopAI.tools](https://topai.tools) - Search-first AI tool discovery engine.
+- [51发现导航](https://51cgw9.cc) - Chinese-language directory of AI tools and websites, labeled for China direct access and free tiers.
 
 ## AI Product Databases & Indexes
 
