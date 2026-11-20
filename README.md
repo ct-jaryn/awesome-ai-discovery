@@ -9,7 +9,7 @@ The AI landscape ships hundreds of new tools every week. This list collects the 
 Awesome AI Discovery is a curated list of the layer around AI tools: directories that index tools, databases that structure product data, launch trackers, benchmark leaderboards, model and research hubs, communities and newsletters. It is for readers who know they need an AI tool and want to find, compare and learn from sources beyond a single search page. Entries are grouped by role rather than ranked, and each entry is one line: a link and a short factual description.
 
 - **Format:** a single `README.md`; each entry is a name link, a hyphen, then one factual sentence ending with a period (see `CONTRIBUTING.md`)
-- **Link checks:** lychee in GitHub Actions (`.github/workflows/linkcheck.yml`)
+- **Link checks:** lychee in GitHub Actions (`.github/workflows/linkcheck.yml`), started by hand
 - **License:** CC0 1.0 Universal (`LICENSE`)
 - **Languages:** English
 
@@ -131,15 +131,15 @@ Link health is checked in CI by `lycheeverse/lychee-action`; the repository defi
 | Command | What it checks |
 | --- | --- |
 | `lychee --no-progress --accept 200..=299,403,429 --max-retries 3 --timeout 20 README.md` | Every link in `README.md` returns an accepted HTTP status; this is the argument list from `.github/workflows/linkcheck.yml` |
-| `.github/workflows/linkcheck.yml` | Runs on every push to `main`, every pull request, a weekly schedule (Monday 06:00 UTC) and manual dispatch; `fail: true` fails the job when a link is dead |
+| `.github/workflows/linkcheck.yml` | Manual dispatch only — the push, pull_request and weekly schedule triggers were removed, so nothing runs on its own; `fail: true` fails the job when a link is dead |
 
-On scheduled runs only, a failure also opens an issue titled `Dead links found in README`, labelled `link-rot`, with the issue body taken from the lychee output file.
+A failing run also opens an issue titled `Dead links found in README`, labelled `link-rot`, with the issue body taken from the lychee output file. GitHub disabled this workflow for repository inactivity, so re-enable it on the Actions tab before relying on it.
 
 A link check proves an HTTP status. It does not prove that the linked page is still accurate, useful or about AI discovery, so review the description when a link changes.
 
 ## Deployment
 
-There is no deployment target, environment variable or publish pipeline. The repository is the published artifact: GitHub renders `README.md` from the `main` branch, so a merged change is visible immediately. The only automation is the link-check workflow above.
+There is no deployment target, environment variable or publish pipeline. The repository is the published artifact: GitHub renders `README.md` from the `main` branch, so a merged change is visible immediately. There is no automatic workflow: the link check above is `workflow_dispatch`-only.
 
 ## Contributing
 
