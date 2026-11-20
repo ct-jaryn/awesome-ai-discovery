@@ -4,6 +4,15 @@
 
 The AI landscape ships hundreds of new tools every week. This list collects the discovery layers on top of it: directories that index tools, databases that structure product data, trackers that follow launches, leaderboards that compare models, and hubs that teach you how to use everything.
 
+## Overview
+
+Awesome AI Discovery is a curated list of the layer around AI tools: directories that index tools, databases that structure product data, launch trackers, benchmark leaderboards, model and research hubs, communities and newsletters. It is for readers who know they need an AI tool and want to find, compare and learn from sources beyond a single search page. Entries are grouped by role rather than ranked, and each entry is one line: a link and a short factual description.
+
+- **Format:** a single `README.md`; each entry is a name link, a hyphen, then one factual sentence ending with a period (see `CONTRIBUTING.md`)
+- **Link checks:** lychee in GitHub Actions (`.github/workflows/linkcheck.yml`)
+- **License:** CC0 1.0 Universal (`LICENSE`)
+- **Languages:** English
+
 ## Contents
 
 - [AI Tool Directories](#ai-tool-directories)
@@ -94,9 +103,47 @@ Where models and papers live.
 - [The Rundown AI](https://www.therundown.ai) - Daily AI news and tool roundups.
 - [Import AI](https://importai.substack.com) - Weekly analysis of AI research and policy by Jack Clark.
 
+## Getting started
+
+### Requirements
+
+Nothing needs to be installed to read this list. A GitHub account is only needed to open an issue or a pull request.
+
+### Read the list
+
+Open the rendered `README.md` on GitHub, or use the [Contents](#contents) links to jump to a section. The list is plain Markdown; no site build or package manager is involved.
+
+### Work with it locally
+
+```bash
+git clone https://github.com/ct-jaryn/awesome-ai-discovery.git
+cd awesome-ai-discovery
+```
+
+### Build
+
+No build step: the list is a single Markdown file and GitHub renders it after a push.
+
+## Verification
+
+Link health is checked in CI by `lycheeverse/lychee-action`; the repository defines no local Node.js or Python dependency.
+
+| Command | What it checks |
+| --- | --- |
+| `lychee --no-progress --accept 200..=299,403,429 --max-retries 3 --timeout 20 README.md` | Every link in `README.md` returns an accepted HTTP status; this is the argument list from `.github/workflows/linkcheck.yml` |
+| `.github/workflows/linkcheck.yml` | Runs on every push to `main`, every pull request, a weekly schedule (Monday 06:00 UTC) and manual dispatch; `fail: true` fails the job when a link is dead |
+
+On scheduled runs only, a failure also opens an issue titled `Dead links found in README`, labelled `link-rot`, with the issue body taken from the lychee output file.
+
+A link check proves an HTTP status. It does not prove that the linked page is still accurate, useful or about AI discovery, so review the description when a link changes.
+
+## Deployment
+
+There is no deployment target, environment variable or publish pipeline. The repository is the published artifact: GitHub renders `README.md` from the `main` branch, so a merged change is visible immediately. The only automation is the link-check workflow above.
+
 ## Contributing
 
-Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first, then open a pull request.
+Contributions welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request; it defines the entry format, what qualifies, the one-entry-per-PR convention and how to remove dead entries.
 
 ## License
 
