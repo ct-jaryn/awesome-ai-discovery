@@ -70,6 +70,7 @@ Compare models before you commit to one.
 Learn how to actually use the tools: guides, APIs, prompts, datasets.
 
 - [AI Resource Hub](https://airesourcehub.site) - Knowledge infrastructure for AI developers: guides, APIs, datasets, prompts, and open-source projects in one searchable learning space.
+- [Resource Planet: AI and Programming](https://resources.packscena.com/categories/ai/) - Chinese-language index of learning materials on AI coding, prompting, and agents, with collection outlines to preview before opening links.
 - [Learn Prompting](https://learnprompting.org) - Free, open-source prompt engineering course.
 - [Prompt Engineering Guide](https://www.promptingguide.ai) - Comprehensive prompting techniques with papers and examples.
 - [DeepLearning.AI](https://www.deeplearning.ai) - Short courses on LLMs, agents, and applied AI.
